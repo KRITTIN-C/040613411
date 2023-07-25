@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <form action="form-echo.php">
+            <fieldset>   
+                <legend>แบบฟอร์มจองทัวร์</legend>
+                <fieldset>   
+                    <legend>ข้อมูลทั่วไป</legend>
+                    <label>ชื่อเต็ม-สกุล :</label><br>
+                        <input
+                        type="text"
+                        name="ชื่อ-สกุล"
+                        placeholder="กรอกชื่อ-สกุล"
+                        pattern="[A-Za-zก-๏]+\s[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"
+                        required
+                        >
+                        <label> *</label><br>
+            
+                    <label>Email :</label><br>
+                        <input
+                            type="text"
+                            name="Email"
+                            pattern="[A-Za-zก-๏_-.]+@[A-Za-zก-๏_-.]+.[a-z]{1,4}"
+                            title="ข้อมูลไม่ถูกต้อง"
+                            required
+                        ><label> *</label><br>
+                    <label>โทรศัพท์ :</label><br>
+                        <input
+                            type="text"
+                            name="ชื่อย่อ"
+                            value="+66"
+                            pattern="(\+66|0)\d{9}"
+                            title="ข้อมูลไม่ถูกต้อง"
+                            required
+                            ><label> *</label><br>
+                    <label>ที่อยู่ :</label><br>
+                        <textarea cols="40" rows="5" name="ที่อยู่"></textarea><br> 
+                    <label>รหัสไปรษณีย์ :</label>
+                        <input
+                            type="text"
+                            size="6"
+                            name="ไปรษณีย์"
+                            pattern="[0-9]{5}"
+                            title="ข้อมูลไม่ถูกต้อง"
+                            ><br>
+                    <label>รูปผู้จอง :</label><br>
+                        <input 
+                            type="file"
+                            id="file"
+                            name="รูป"
+                            ><br>    
+                </fieldset><br>
+                <fieldset>
+                    <legend>ข้อมูลเข้าสู่ระบบ</legend>
+                    <label>Username :</label><br>
+                        <input
+                        type="text"
+                        name="Username"
+                        pattern="[A-Za-zก-๏_]{8}[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"
+                        ><br>
+                        <i>ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่8 ตัวขึ้นไป</i><br>
+                    <label>Password :</label><br>
+                        <input
+                        type="password"
+                        name="Password"
+                        pattern="[A-Za-zก-๏_0-9]{8}[A-Za-zก-๏_0-9]+"
+                        title="ข้อมูลไม่ถูกต้อง"
+                        ><br>
+                        <i>ประกอบด้วยตัวอักษรอะไรก็ได้8 ตัวขึ้นไป</i>
+                </fieldset><br>
+                <fieldset>
+                    <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+                    <label>แพคเก็จทัวร์ :</label>
+                        <select name="แพคเก็จทัวร์">
+                            <option value="Thailand">Thailand</option>
+                            <option value="China">China</option>
+                            <option value="Philippines">Philippines</option>
+                        </select>
+                    <label>วันที่เดินทาง :</label>
+                        <input type="date" name=" Date" > 
+                        <br>
+                    <label>จำนวนผู้เดินทาง :</label>
+                        <input
+                        type="password"
+                        name="จำนวนผู้เดินทาง"
+                        pattern="([1-9]|10)"
+                        title="ข้อมูลไม่ถูกต้อง"
+                        ><br>
+                    <label>เน้นการท่องเที่ยวแบบใด?</label><br>
+                        <input
+                        type="checkbox"
+                        name="รูปแบบท่องเที่ยว1"
+                        value="ชอปปิ้ง"
+                        >ชอปปิ้ง<br>
+                        <input
+                        type="checkbox"
+                        name="รูปแบบท่องเที่ยว2"
+                        value="ธรรมชาติ"
+                        >ธรรมชาติ<br>
+                        <input
+                        type="checkbox"
+                        name="รูปแบบท่องเที่ยว3"
+                        value="ทะเล"
+                        >ทะเล<br>
+                </fieldset><br>
+                <label>ยอมรับเงื่อนไขและข้อตกลง</label>
+                    <input
+                    type="radio"
+                    checked ="checked"
+                    name="ยอมรับเงื่อนไข"
+                    value="I agree"
+                    >I agree
+                    <input
+                    type="radio"
+                    name="ยอมรับเงื่อนไข"
+                    value="I disagree"
+                    >I disagree
+                <input type="Submit" value="จอง">
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <form action="form-echo.php">
+            <fieldset style="background-color:  lightgray; ;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ1</legend>
+                <p><label>ชื่อเต็ม</label><br>
+                    <input type="text" name="ชื่อเต็ม" placeholder="ชื่อเต็ม" pattern="[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"><br>
+                <p><label>ย่อของสาขาวิชา</label><br>
+                    <input type="text" name="ชื่อย่อ" placeholder="ชื่อย่อ" pattern="[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"><br>
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ2</legend>
+                <p><label>จำนวนเงิน : </label><input type="text" name="จำนวนเงิน" placeholder="จำนวนเงิน" pattern="\d+" title="ข้อมูลไม่ถูกต้อง"><br>              
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ3</legend>
+                <p><label>อาหารที่ชื่นชอบ5อย่าง</label><br>
+                    <label>เมนูที่1 :</label>
+                    <input type="text" name="เมนูที่1" placeholder="เมนูที่1" pattern="[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"><br>
+                    <label>เมนูที่2 :</label>
+                    <input type="text" name="เมนูที่2" placeholder="เมนูที่2" pattern="[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"><br>
+                    <label>เมนูที่3 :</label>
+                    <input type="text" name="เมนูที่3" placeholder="เมนูที่3" pattern="[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"><br>
+                    <label>เมนูที่5 :</label>
+                    <input type="text" name="เมนูที่4" placeholder="เมนูที่4" pattern="[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"><br>
+                        <label>เมนูที่5 :</label>
+                    <input type="text" name="เมนูที่5" placeholder="เมนูที่5" pattern="[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"><br>
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ4</legend>
+                <p><label>ค่าไฟ 3 เดือนที่ผ่านมา</label><br>
+                    <label>เดือนที่ 1 :</label>
+                    <input type="text" name="ค่าไฟเดือนที่ 1" placeholder="เดือนที่1" pattern="\d+" title="ข้อมูลไม่ถูกต้อง"><br>
+                    <label>เดือนที่ 2 :</label>
+                    <input type="text" name="ค่าไฟเดือนที่ 2" placeholder="เดือนที่2" pattern="\d+" title="ข้อมูลไม่ถูกต้อง"><br>
+                    <label>เดือนที่ 3 :</label>
+                    <input type="text" name="ค่าไฟเดือนที่ 3" placeholder="เดือนที่3" pattern="\d+" title="ข้อมูลไม่ถูกต้อง">
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ5</legend>
+                <p><label>รหัสบัตรประชาชน</label><br>
+                    <input type="text" name="รหัสบัตรประชาชน" placeholder="ID" pattern="\d{13}" title="ข้อมูลไม่ถูกต้อง">
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ6</legend>
+                <p><label>ความพึงพอใจของหนังสือเล่มนี้</label><br>
+                    <input type="radio" name="ความพอใจของหนังสือ" value="พอใจมาก"> พอใจมาก <br>
+                    <input type="radio" name="ความพอใจของหนังสือ" value="พอใจปลานกลาง"> พอใจปานกลาง <br>
+                    <input type="radio" name="ความพอใจของหนังสือ" value="พอใจน้อย"> พอใจน้อย <br>
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ7</legend>
+                <p><label>อาการป่วย</label><br>
+                    <textarea cols="40" rows="5" placeholder="ข้อความ"></textarea>
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ8</legend>
+                <p><label>ช่วง 3 เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่</label><br>
+                    <input type="radio" name="วัคซีน" value="เคยรับ"> เคยรับ <br>
+                    <input type="radio" name="วัคซีน" value="ไม่เคยรับ"> ไม่เคยรับ <br>
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ9</legend>
+                <p><label>รหัสผ่าน</label><br>
+                    <input type="password" name="รหัสผ่าน" placeholder="รหัสผ่าน" pattern="[_-*]\w+"
+                        title="ข้อมูลไม่ถูกต้อง">
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ10</legend>
+                <p><label>เวลาเริ่มเข้าเรียนและสิ้นสุดเวลาเรียน</label><br>
+                    <label>เข้าเรียน : </label><input type="time" name="เวลาเริ่มเรียน"> &nbsp;
+                    <label>สิ้นสุดการเรียน : </label><input type="time" name="เวลาเลิกเรียน">
+            </fieldset>
+            <fieldset style="background-color:  lightgray;">
+                <legend style="font-weight: bolder; font-size: 20px;">ข้อ11</legend>
+                <p><label>วันเวลาที่ต้องไปพบแพทย์</label><br>
+                    <input type="date" name=" Date">
+            </fieldset>
+            <footer style="padding-top: 10px;">
+                <input type="Submit" value="SUBMIT" style="background-color: aquamarine;">
+            </footer>
+        </form>
+    </body>
+</html>

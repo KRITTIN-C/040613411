@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            table , td 
+            {
+              border: 1px solid black;
+              width: 25%;
+            }
+            table 
+            {
+              border-spacing: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="3-2.html" method="get">
+            <h1>เข้าสู่ระบบ</h1>
+            <table style="width: 300px;">
+                <tr>
+                    <td><label>Username:</label></td>
+                    <td><input
+                        type="text"
+                        required
+                        autofocus style="width: 205px;"></td>
+                </tr>
+                <tr>
+                    <td><label>Password :</label></td>
+                    <td><input
+                        type="text"
+                        required style="width: 205px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>กรุณาพิมพ์ตามตัวเลขที่ปรากฎ:</label><br>
+                        <label>1559</label><br>
+                        <input
+                            type="text"
+                            pattern="1559"
+                            required></td>
+                </tr>
+            </table>
+            <br>
+            <button 
+                type="submit" 
+                id="submit"
+                value="Login">
+            <img
+                src="login-logo.png" 
+                width="80px">
+            </button>
+        </form>
+    </body>
+</html>

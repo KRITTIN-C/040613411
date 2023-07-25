@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="form-echo.php" method="get">
+            <p><label>Username :</label><br>
+                <input
+                type="text"
+                name="Username"
+                pattern="[A-Z]+\s[A-Z]+"
+                title="ข้อมูลไม่ถูกต้อง"
+                required
+                ><br>
+            <p><label>รหัสนักศึกษา :</label><br>
+                <input
+                type="text"
+                name="รหัสนักศึกษา"
+                pattern="\d{2}-\d{6}-\d{4}-\d{1}"
+                title="ข้อมูลไม่ถูกต้อง"
+                required
+                ><br>
+            <p><label>บ้านเลขที่ :</label><br>
+                <input
+                    type="text"
+                    name="บ้านเลขที่"
+                    pattern="(\d+/\d+|\d+)"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    required
+                    ><br>        
+            <p><label>สาขาวิชา</label></p>
+            <select name="dept">
+                <option value="">--Please choose an option</option>
+                <option value="CS">CS</option>
+                <option value="IC">IC</option>
+                <option value="MA">MA</option>
+                <option value="IMI">IMI</option>
+                <option value="AS">AS</option>
+                <option value="AFET">AFET</option>
+            </select>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </body>
+</html>
