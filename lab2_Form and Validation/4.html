@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8">
     </head>
-    <body>
+    <body >
         <form action="form-echo.php" method="get">
-            <p><label>Username :</label><br>
+            <p><label>Username :</label>
                 <input
                 type="text"
                 name="Username"
                 pattern="[A-Z]+\s[A-Z]+"
                 title="ข้อมูลไม่ถูกต้อง"
-                required
+                required style="margin-left: 21px;"
                 ><br>
-            <p><label>รหัสนักศึกษา :</label><br>
+            <label>รหัสนักศึกษา :</label>
                 <input
                 type="text"
                 name="รหัสนักศึกษา"
@@ -21,15 +21,15 @@
                 title="ข้อมูลไม่ถูกต้อง"
                 required
                 ><br>
-            <p><label>บ้านเลขที่ :</label><br>
+            <label>บ้านเลขที่ :</label>
                 <input
                     type="text"
                     name="บ้านเลขที่"
                     pattern="(\d+/\d+|\d+)"
                     title="ข้อมูลไม่ถูกต้อง"
-                    required
+                    required style="margin-left: 21px;"
                     ><br>        
-            <p><label>สาขาวิชา</label></p>
+            <label>สาขาวิชา : </label>
             <select name="dept">
                 <option value="">--Please choose an option</option>
                 <option value="CS">CS</option>
