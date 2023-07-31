@@ -1,0 +1,13 @@
+/* div.table{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr ;
+    
+} */
+table,td,tr{
+    margin: auto;
+    border: 1px solid black;
+}
+tr:hover{
+    background-color:blueviolet;
+}
