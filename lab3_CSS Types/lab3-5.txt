@@ -1,0 +1,17 @@
+1. จงค้นคว้า Selector ที่ใช้ในข้อนี้ ตอนที่8
+td+td, th+th {
+Property: value
+}
+หมายถึงอะไร?
+
+Answer : Adjacent-Sibling selector โดย td เเละ th คือ Selector โดยจะเลือกตัวที่อยู่ถัดจากตัวที่เลือกเพื่อนำมาจัดรูปแบบ
+	  Property คือ ชื่อของรูปเเบบที่ต้องการจะให้เป็น
+	  value คือค่าที่ต้องการกำหนดให้ได้ตามรูปแบบที่ต้องการ
+	  {} or brance คือ ขอบเขตของ Selector ที่เราออกเเบบว่าจะมี Property อะไรบ้าง
+
+2. จากข้อ 1.จงหาตวัอย่างการใช้งาน Selector ชนิดน้ีมาแสดงและอธิบายประกอบ
+div+h1{
+	background-color:blueviolet;
+}
+
+Answer : เลือก element h1 ที่อยู่ถัดจาด div
