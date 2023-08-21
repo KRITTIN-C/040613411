@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function contTheword(str){
+            var Pwords = str.split(' ');
+            var sum = 0;
+            
+            for (var i = 0; i < Pwords.length; i++) {
+                var words = Pwords[i];
+                if (words === 'The'||words === 'the') {
+                    sum++;
+                }
+            }
+
+            alert("มี The ทั้งหมด " + sum + " คำ");
+        }
+    </script>
+</head>
+<body>
+    The eighth ruler of the Fifth Dynasty in the late 25th century.<br><br>
+    <a href="#" onclick="contTheword('The eighth ruler of the Fifth Dynasty in the late 25th century')">
+        Click for count 'the'
+    </a>
+</body>
+</html>

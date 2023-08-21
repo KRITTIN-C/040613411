@@ -1,0 +1,51 @@
+html>
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        function add() {
+            let ipname = document.getElementById("name");
+            let outname = ipname.value;
+            let ipaddress = document.getElementById("address");
+            let outaddress = ipaddress.value;
+            let ipphone = document.getElementById("phone");
+            let outphone = ipphone.value;
+            
+            let tr = document.createElement("tr");
+
+            let td_name = document.createElement("td");
+            td_name.innerHTML = outname;
+            let td_address = document.createElement("td");
+            td_address.innerHTML = outaddress;
+            let td_outphone = document.createElement("td");
+            td_outphone.innerHTML = outphone;
+
+            let addtb = document.getElementById("tb");
+            addtb.appendChild(tr);
+            addtb.appendChild(td_name);
+            addtb.appendChild(td_address);
+            addtb.appendChild(td_outphone);
+
+        }
+        window.onload = function () {
+            let onclick = document.getElementById("onclick");
+            onclick.onclick = add;
+
+        }
+
+    </script>
+</head>
+
+<body>
+ชื่อลูกค้า : <input type="text" id="name"><br>
+ที่อยู่ : <input type="text" id="address"><br>
+โทรศัพท์ : <input type="text" id="phone"><br>
+<input type="button" value="เพิ่ม" id="onclick"><br><br>
+<table border="1" id="tb">
+    <th>ชื่อลูกค้า</th>
+    <th>ที่อยู่</th>
+    <th>โทรศัพท์</th>
+</table>
+</body>
+
+</html>
