@@ -1,0 +1,26 @@
+section {
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    background-color: #888888e5;
+    border-radius: 20px;
+    padding: 50 100 50 100;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+button {
+    float: right;
+    background-color: yellow;
+    padding: 7px;
+    color: black;
+    border-radius: 5px;
+}
+
+article {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}

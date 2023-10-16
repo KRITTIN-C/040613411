@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    list-style: none;
+    
+    text-decoration-line: none !important;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+body{
+    background-image: url(image/traffic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+
+ul li:last-child a {
+        
+    background-color: yellow;
+    padding: 7px;
+    color: black;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+ul li:last-child:hover a {
+    background-color: red;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    nav{
+        background-color: #4d4d4d;
+      
+    }
+    ul,ul>a{
+        text-align: center ;
+        
+    }
+    ul{
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    
+    li{
+        display: block; /* เรียงกันแถวเดียว */
+        
+    }
+    li a{
+        color: white;
+        padding: 20px;
+    
+    
+    }
+    
+    ul li:last-child{
+        
+      
+        margin-top: 10px;
+        
+        
+    }
+    article{
+        display: block;
+    }
+    article section{
+        background-color: #888888e5;
+        border:1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        
+        padding:20px;
+        width: 50%;
+        margin-top: 50px;
+    }
+    aside{
+        background-color: #b3b3b3e5;
+        border:1px solid #000000;
+        border-radius: 10px;
+        margin: auto;
+        
+        padding:20px;
+        width: 300px;
+        margin-top: 50px; 
+        text-align: center;
+    }
+    section{
+        background-color: #888888e5;
+        border:1px solid black;
+        border-radius: 10px;
+        margin: auto;
+
+        padding:20px;
+        width: 30%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+    nav{
+        background-color: #4d4d4d;
+      
+    }
+    ul,ul>a{
+        text-align: center ;
+        
+    }
+    ul{
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    
+    li{
+        display: block; /* เรียงกันแถวเดียว */
+        
+    }
+    li a{
+        color: white;
+        padding: 20px;
+    
+    
+    }
+    
+    ul li:last-child{
+        
+      
+        margin-top: 10px;
+        
+        
+    }
+    article{
+        display: block;
+    }
+    article section{
+        background-color: #888888e5;
+        border:1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        
+        padding:20px;
+        width: 50%;
+        margin-top: 50px;
+    }
+    aside{
+        background-color: #b3b3b3e5;
+        border:1px solid #000000;
+        border-radius: 10px;
+        margin: auto;
+        
+        padding:20px;
+        width: 300px;
+        margin-top: 50px; 
+        text-align: center;
+    }
+    section{
+        background-color: #888888e5;
+        border:1px solid black;
+        border-radius: 10px;
+        margin: auto;
+
+        padding:20px;
+        width: 30%;
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (min-width: 981px) {
+    
+    nav{
+        background-color: #4d4d4d;
+        padding: 20px;
+        width: 100%;
+        justify-content: space-between; /*logo left nav right*/
+        
+    }
+    
+    ul{
+        float: right;
+    }
+    
+    
+    li{
+        display: inline; /* เรียงกันแถวเดียว */
+    }
+    li a{
+        color: white;
+        padding: 20px;
+    
+    
+    }
+    
+    article{
+        display: flex;
+    }
+    article section{
+        background-color: #888888e5;
+        border:1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        margin-right: 40px;
+        padding:20px;
+        width: 30%;
+        margin-top: 50px;
+    }
+    aside{
+        background-color: #b3b3b3e5;
+        border:1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        margin-left: 0px;
+        padding:20px;
+        width: 300px;
+        margin-top: 50px; 
+        text-align: center;
+    }
+    section{
+        background-color: #888888e5;
+        border:1px solid black;
+        border-radius: 10px;
+        margin: auto;
+
+        padding:20px;
+        width: 30%;
+        margin-top: 50px;
+    }
+}
