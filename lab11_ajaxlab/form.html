@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        var xmlHttp;
+
+        function send() {
+            xmlHttp = new XMLHttpRequest();
+            xmlHttp.onreadystatechange = showResult;
+
+            var name = document.getElementById("name").value;
+            
+            var url = "show.php?name=" + name ;
+
+            xmlHttp.open("GET", url);
+            xmlHttp.send();
+        }
+        function showResult() {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                document.getElementById("result").innerHTML = xmlHttp.responseText;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    ป้อนชื่อสมาชิก <input type="text" id="name" onkeyup="send()"><br>
+    <span id="result"></span>
+</body>
+
+</html>
